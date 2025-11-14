@@ -2,9 +2,61 @@
 /*  Übergreifend / Body                              */
 /*  -----------------------------------------        */
 html, body {
- background-image:url("");
+ background-image:url("/hintergrundbesser.png");
  background-repeat:no-repeat; 
  background-size: cover;      
  overflow:hidden;             
  font-size:12pt;
- }
+ } position:fixed;            
+  left:0;                    
+  top:0;                     
+  border: 1px solid #ccc;    
+  background-color:green;    
+  width:100%;               
+  height:100px;             
+  z-index:2;                             
+
+#navibereich {
+  position:fixed;            
+  top: 100px;                
+  left:0;                   
+  margin-top:0px;            
+  border: 1px solid #ccc;    
+  background-color:red;      
+  width:100%;                
+  height:50px;               
+  z-index:2;                               
+}
+#textbereich {
+  position:fixed;           
+  left:0;                   
+  right:0;                   
+  top:150px;                 
+  padding-top:20px;         
+  padding-bottom:60px;      
+  padding-right:210px;      
+  border: 1px solid #ccc;    
+  height:100%;              
+  overflow-y: auto;          
+  background-color:rgba(255,255,255,0.5);
+}
+#newsbereich {
+  position:fixed;            
+  right:0px;                
+  top: 150px;                
+  border: 1px solid #ccc;    
+  background-color:yellow;  
+  width:200px;               
+  min-height:300px;         
+  z-index:2;                                 
+}
+#fussbereich {
+  position:fixed;           
+  bottom: 0;                 
+  left:0;                    
+  border: 1px solid #ccc;    
+  width: 100%;               
+  background-color: blue;    
+  height:50px;             
+  z-index:2;                 
+}
