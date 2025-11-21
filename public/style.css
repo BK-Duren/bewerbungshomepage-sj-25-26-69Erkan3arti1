@@ -8,7 +8,7 @@ html, body {
  overflow:hidden;             
  font-size:12pt;
  } position:fixed;            
-  left:0;                    
+  left:0;                   
   top:0;                     
   border: 1px solid #ccc;    
   background-color:green;    
@@ -35,10 +35,10 @@ html, body {
   padding-top:20px;         
   padding-bottom:60px;      
   padding-right:210px;      
-  border: 1px solid #ffffff;    
+  border: 1px solid #ffffff00;    
   height:100%;              
   overflow-y: auto;          
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255,255,255,0);
 }
 #newsbereich {
   position:fixed;            
@@ -61,8 +61,8 @@ html, body {
   z-index:2;                 
 }
 .header-image {
-content:url(image.png); // Den Link zu einem Bild kann mit Hilfe von CSS festgelegt werden;
-width: 100px;  // Größe des Bildes wird festgelegt;
+content:url(image neu.jpg); // Den Link zu einem Bild kann mit Hilfe von CSS festgelegt werden;
+width: 75px;  // Größe des Bildes wird festgelegt;
 float:left;  // Das Bild wird links angezeigt. Bei float:right wird es rechts angezeigt;
 margin:5px;
 }
