@@ -65,4 +65,30 @@ content:url(image neu.jpg); // Den Link zu einem Bild kann mit Hilfe von CSS fes
 width: 50px;  // Größe des Bildes wird festgelegt;
 float:left;  // Das Bild wird links angezeigt. Bei float:right wird es rechts angezeigt;
 margin:5px;
+
+#logobereich {
+  position:fixed;               
+  top:0;                           
+left:0;                            
+border: 0px solid #ccc; 
+background-image:url("logo neu.jpg");
+background-repeat:no-repeat; 
+  background-size: cover;    
+background-color:rgba(16,78,139,0);    
+  width: 50px;                
+    height:50px;                  
+      z-index:3;                      
+
+      }/*  ----------------------------------------------------------- */
+/*  Bildformatierung für Bilder im Textbereich      */
+/*  ----------------------------------------------------------- */
+.text-image-left{
+  width:200px;  
+margin:0px;   
+float:left;        
+}
+text-image-right {
+width:200px; 
+margin:0px;  
+float:right;    
 }
