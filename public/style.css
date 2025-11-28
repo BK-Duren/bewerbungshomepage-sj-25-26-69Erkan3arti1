@@ -62,7 +62,7 @@ html, body {
 }
 .header-image {
 content:url(image neu.jpg); // Den Link zu einem Bild kann mit Hilfe von CSS festgelegt werden;
-width: 75px;  // Größe des Bildes wird festgelegt;
+width: 50px;  // Größe des Bildes wird festgelegt;
 float:left;  // Das Bild wird links angezeigt. Bei float:right wird es rechts angezeigt;
 margin:5px;
 }
