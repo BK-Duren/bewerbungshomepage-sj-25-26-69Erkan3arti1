@@ -7,7 +7,23 @@ html, body {
  background-size: cover;      
  overflow:hidden;             
  font-size:12pt;
- } position:fixed;            
+ } 
+  #logobereich {
+  position:fixed;              
+  top:0;                           
+  left:0;                           
+  border: 0px solid #ccc; 
+  background-image:url("logo_neu.jpg");
+  background-repeat:no-repeat; 
+  background-size: cover;    
+  background-color:rgba(16,78,139,0);    
+  width:200px;                
+  height:200px;               
+  z-index:3;                                   
+}
+
+ #kopfbereich {
+  position:fixed;            
   left:0;                   
   top:0;                     
   border: 1px solid #ccc;    
@@ -15,7 +31,7 @@ html, body {
   width:100%;               
   height:100px;             
   z-index:2;                             
-
+}
 #navibereich {
   position:fixed;            
   top: 100px;                
@@ -61,10 +77,23 @@ html, body {
   z-index:2;                 
 }
 .header-image {
-content:url(image neu.jpg); // Den Link zu einem Bild kann mit Hilfe von CSS festgelegt werden;
-width: 50px;  // Größe des Bildes wird festgelegt;
-float:left;  // Das Bild wird links angezeigt. Bei float:right wird es rechts angezeigt;
+content:url(image neu.jpg);
+width: 50px;  
+float:left;  
 margin:5px;
+/*  ----------------------------------------------------------- */
+/*  Bildformatierung für Bilder im Textbereich      */
+/*  ----------------------------------------------------------- */
+.text-image-left {
+width:200px;  
+margin:0px;   
+float:left;        
+}
+.text-image-right {
+width:200px; ;
+margin:0px;  
+float:right;     
+}
 
 #logobereich {
   position:fixed;               
@@ -91,4 +120,45 @@ text-image-right {
 width:200px; 
 margin:0px;  
 float:right;    
+}
+/*  -----------------------------------------        */
+/*  Menüformatierung                                 */
+/*  -----------------------------------------        */
+
+/*  Linkformatierung für das Menü übergreifend       */
+.naviformat a, button {
+  	font-family: 'Montserrat', sans-serif;
+  	text-transform:uppercase;	
+font-size:90%;            	
+	font-weight:700;		      
+	color: rgb(0,0,0);		
+	display: block;			
+	transition: all 0.3s ease-out 0s; 
+	text-decoration:none;		
+  	line-height: 20px;		
+  	padding: 5px 5px;		
+}
+/*  Formatierung des Hauptmenüs (mainnav)                  */
+.mainnav {
+	text-align:right;          
+	list-style-type: none;     
+	margin: 20px 5px;          
+       padding: 5px 5px;          
+}
+
+.mainnav > li {
+	float:none;
+}				
+/*  Formatierung des aktiven Hauptmenüpunkts */
+.mainnav > li > a.active {
+	font-weight:700;		
+	text-shadow: 1px 1px black, 2px 2px grey, 3px 3px 	#696969; 
+  	color: rgba(90,195,208,1);	
+}
+/*  Formatierung des Menüpunkts, wenn die Maus darüber fährt */
+.mainnav > li > a:hover {
+	font-weight:700;		
+	font-style:italic;	
+	text-shadow: 1px 1px white, 2px 2px white, 3px 3px white; 
+  	background-color:rgba(255,255,255,0.7);   
 }
