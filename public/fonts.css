@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'StoryScript';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/StoryScript-Regular.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'StoryScript';
+  font-style: normal;
+  font-weight: 700;
+  src: url(assets/StoryScript-Regular.ttf) format('truetype');
+}

@@ -127,7 +127,7 @@ float:right;
 
 /*  Linkformatierung für das Menü übergreifend       */
 .naviformat a, button {
-  	font-family: 'Montserrat', sans-serif;
+  	font-family: 'StoryScript', sans-serif;
   	text-transform:uppercase;	
 font-size:90%;            	
 	font-weight:700;		      
@@ -161,4 +161,72 @@ font-size:90%;
 	font-style:italic;	
 	text-shadow: 1px 1px white, 2px 2px white, 3px 3px white; 
   	background-color:rgba(255,255,255,0.7);   
+}
+/*  -----------------------------------------        */
+/*  Menüformatierung                                 */
+/*  -----------------------------------------        */
+
+/*  Linkformatierung für das Menü übergreifend       */
+.naviformat a, button {
+  	font-family: 'Montserrat', sans-serif;
+  	text-transform:uppercase;	
+font-size:90%;            	
+	font-weight:700;		     
+	color: rgb(0,0,0);		
+	display: block;			
+	transition: all 0.3s ease-out 0s; 
+	text-decoration:none;		
+  	line-height: 20px;		
+  	padding: 5px 5px;			
+}
+/*  Formatierung des Hauptmenüs (mainnav)                  */
+.mainnav {
+	text-align:right;          
+	list-style-type: none;     
+	margin: 20px 5px;        
+       padding: 5px 5px;          
+}
+
+.mainnav > li {
+	float:none; float:left, 
+}				
+/*  Formatierung des aktiven Hauptmenüpunkts */
+.mainnav > li > a.active {
+	font-weight:700;		
+	text-shadow: 1px 1px black, 2px 2px grey, 3px 3px 	#696969; 
+  	color: rgba(90,195,208,1);	
+/*  Formatierung des Menüpunkts, wenn die Maus darüber fährt */
+
+	font-weight:700;		
+	font-style:italic;
+	text-shadow: 1px 1px white, 2px 2px white, 3px 3px white; 
+  	background-color:rgba(255,255,255,0.7);   
+}	
+/*  -----------------------------------------        */
+/*  Für Teaser (Blickfang)             	        */
+/*  -----------------------------------------        */
+.teaser {
+	font-weight:bold;				
+	font-family:'Montserrat', sans-serif;
+	padding: 5px 5px;				
+	margin: 0 2px 4px 2px;			
+	border-bottom: 1px solid #ccc;		
+}
+.teaser_date {
+	font-size:90%;                         
+}
+.teaser_title {
+	font-size:110%;                        
+	line-height:140%;
+}
+.teaser_text {
+        line-height: 140%;                     
+}
+a.teaser_link {
+padding-top: 4px;
+color:black;
+}
+.teaser_border {
+  color: #333;
+  border: 2px solid #548b54;
 }
